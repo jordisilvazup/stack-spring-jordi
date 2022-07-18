@@ -1,0 +1,16 @@
+name: rest-api-concurrency
+description: Template para favorecer a criação de apis com requisitos de concorrência
+types:
+  - app-template
+inputs:
+  - label: "informe o nome do seu projeto"
+    type: text
+    name: project_name
+    default: project-name
+  - label: "Informe o groupId"
+    type: text
+    name: "group_id"
+    default: "com.github"
+computedInputs: 
+  "pacote_base": "{{inputs.group_id}}.{{inputs.project_name}}"        
+  "pasta": "{{computed_inputs.pacote_base | replace('.','/')}}"
