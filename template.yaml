@@ -1,4 +1,4 @@
-name: rest-api-concurrency
+name: stack-spring-jordi-template
 description: Template para favorecer a criação de apis com requisitos de concorrência
 types:
   - app-template
